@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+  width: 100%;
+    background-color: #874d4d;
+    color: white;
+    padding: 2px;
+    position: fixed;
+    
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: rgb(227, 217, 217);
+    text-decoration: none;
+}
+
+section {
+    padding: 2em;
+}
+
+h1 {
+    color: #1c6483;
+}
+h2,h3{
+   color: #74a3b7;
+}
+
+#home {
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#about img {
+    max-width: 1000px;
+  
+}
+
+#destinations .destination {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#destinations .destination img {
+    max-width: 100%;
+    height: auto;
+}
+
+#gallery .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;;
+}
+
+#gallery .gallery img {
+    width: calc(33% - 1em);
+    height: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 1px;
+}
+
+form input, form textarea {
+    margin-bottom: 1px;
+    padding: 0.5em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form button {
+  
+  margin:10px;
+    width: 100%;
+    padding: 10px;
+    background-color: #323f80;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover{
+  background-color:rgb(68, 68, 114) ;
+  color: black;
+}
+
+footer {
+    background-color:#874d4d;
+    color: white;
+    text-align: center;
+    padding:10px;
+}
+
+footer .social-links {
+    margin: top 10px;;
+}
+
+footer .social-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration:none;
+}
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Travel Blog</title>
+        <link rel="stylesheet" href="blog travel.css" />
+      </head>
+      <body>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+    
+        <section id="home">
+          <h1>Welcome to My Travel Blog</h1>
+          <p>Join me on my adventures around the world!</p>
+          <div class="featured-post">
+            <p>Never stop exploring.</p>
+      
+          </div>
+        </section>
+    
+        <section id="about">
+          <h2>About Me</h2>
+          <p>Hello! I'm a traveler."Remember that happiness is a way of travel-not a destination".</p>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSnAJSmSZW0xD0C0xlXp4fHWRjvv4tS4lzTA&s" alt="img 1">
+    
+        </section>
+    
+        <section id="blog">
+          <h2>Blog Posts</h2>
+          <div class="post-preview">
+            <h2>Exploring the beautiful islands of Maldives</h2>
+            <p>Date: 2024-05-01</p>
+            <p>Maldives offers some of the most beautiful islands in the world...</p>
+          
+          </div>
+        </section>
+    
+        <section id="destinations">
+          <h2>Destinations</h2>
+          <div class="destination">
+            <h3>switzerland, paris</h3>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrzEMALZDIDnKIFy8glTFi8R7Yx7aZ_OTniQ&s" alt="switzerland"/>
+             <p>The city of magnificent natural beauty!!!!</p>
+          </div>
+        </section>
+    
+        <section id="gallery">
+          <h2>Photo Gallery</h2>
+          <div class="gallery">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWv-_ZV7ZRCrenFGOaytGydJ8IK1o7uVZVhw&s" alt="Photo 1" />
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyvLEpcAaUqhxcJL4meaih99xt6J0-rFnw0A&s" alt="photo 2"/>
+          </div>
+        </section>
+    
+        <section id="contact">
+          <h2>Contact Me</h2>
+          <form action="#">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required />
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </section>
+    
+        <footer>
+          <p>&copy; 2024 Travel Blog</p>
+          <div class="social-links">
+            <a href="https://www.linkedin.com">LinkedIn</a>
+            <a href="https://www.twitter.com">Twitter</a>
+          </div>
+        </footer>
+      </body>
+    </html>
+    
